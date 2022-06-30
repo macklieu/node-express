@@ -4,7 +4,7 @@ var app = new express();
 var port = 3000;
 
 
-app.get("/", (req, res) => {
+app.get("/error", (req, res) => {
     res.status(401).sendFile(path.join(__dirname + '/components/error.html'));
 })
 
